@@ -1,6 +1,6 @@
 * Instalation Guide ------------------------------------------------------------------------------------------------
 
-1 - Install some PHP Server to be able to execute the scripts on browser, I runed XAMPP on my tests;
+1 - Install some PHP Server to be able to execute the scripts on browser, I runed XAMPP on my tests with PHP version 7.2;
 
 2 - Install database MySQL;
 

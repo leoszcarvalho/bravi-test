@@ -1,0 +1,53 @@
+<!-- Welcome Template -->
+<section class="welcome_message">
+        <h2>{{the_message}}</h2>
+</section>
+
+<form action="" method="post">
+  
+  <label for="city">
+    City
+  </label>              
+  <input type="text" name="city" value="{{city}}" placeholder="Fill with your city" >
+  <br>
+
+  <label for="country">
+    Country Code
+  </label>              
+  <input type="text" name="country" value="{{country}}" placeholder="Fill with your country code" >
+  <br>
+
+  <input type="submit" value="Send Data">  
+
+</form>
+
+{% if temperature != false %}
+
+	{% if temperature["error"] == true %}
+
+		<p>
+			{{temperature["error"]}}
+		</p>
+
+	{% else %}
+
+		<br><br>
+		
+		<p>
+			<strong>Temperature: </strong>	
+			{{temperature["temp"]}} ºF
+		</p>
+
+		<p>
+			<strong>Min. Temperature: </strong>	
+			{{temperature["temp_min"]}} ºF
+		</p>
+
+		<p>
+			<strong>Max. Temperature: </strong>	
+			{{temperature["temp_max"]}} ºF
+		</p> 
+
+	{% endif %}
+
+{% endif %}
